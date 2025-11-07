@@ -3,7 +3,7 @@ import { schoolData } from '../data/schoolData';
 
 // FIX: Per coding guidelines, API key must be from process.env.API_KEY.
 // The execution context is assumed to have this environment variable available.
-const API_KEY = process.env.API_KEY;
+const API_KEY = import.meta.env.VITE_API_KEY;
 
 if (!API_KEY) {
   // A mock implementation for environments without an API key.
